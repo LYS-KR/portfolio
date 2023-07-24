@@ -91,6 +91,7 @@ button:focus {
 
 .max-container {
   max-width: var(--size-max-width);
+  margin: auto;
 }
 
 .title {
@@ -168,7 +169,7 @@ button:focus {
 
 .home__title {
   font-size: 3rem;
-  margin: ;
+  margin-bottom: 1rem;
 }
 
 .home__title--strong {
@@ -249,8 +250,8 @@ button:focus {
 }
 
 .job__img {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 40px;
 }
 
 
