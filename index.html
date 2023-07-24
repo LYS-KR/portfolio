@@ -4,101 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
     <title>LYS Portfolio</title>
-    <meta name="description" content="Portfolio for software engineer LYS">
+    <meta 
+    name="description" 
+    content="Portfolio for software engineer LYS">
     <meta name="author" content="LYS">
    <link rel="icon" type="imgs/png" href="imgs/star.png" />
+    <!--OG (Open Graph Data)-->
+    <meta property="og:title" content="연수의 포트폴리오" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="배포후 생성된 URL" />
+    <meta property="og:image" content="배포후에 생성된 이미지 URL" />
+    <!-- Font Awesome-->
     <script src="https://kit.fontawesome.com/0d915904c4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script src="main.js" defer></script>
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<!-- Javascript-->
+    <script src="main.js" defer></script>
 
 </head>
 <body>
     
-   <!--Navbar-->
-   <nav id="navbar">
-
-    <div class="navar__logo">
-        <i class="fab fa-diaspora"></i>
-        <a href="#">LYS</a>
+   <!--Header-->
+    <header class="header">
+    <div class="header__logo">
+        <img class="header__logo__img" src="imgs/star.png" alt="logo" />
+        <h1 class="header__logo__title"><a href="#">LYS</a></h1>
        </div>
-       
-        <ul class="navbar_menu">
-            <li class="navbar_menu__item active">Home</li>
-            <li class="navbar_menu__item">About</li>
-            <li class="navbar_menu__item">Skills</li>
-            <li class="navbar_menu__item">My work</li>
-            <li class="navbar_menu__item">Testimonials</li>
-            <li class="navbar_menu__item">Contact</li>
+       <nav>
+        <ul class="header__menu">
+            <li><a class="header__menu__item active" href="#home">Home</a></li>
+            <li><a class="header__menu__item" href="#about">About<a/\</li>
+            <li><a class="header__menu__item" href="#skills">Skills</a></li>
+            <li><a class="header__menu__item" href="#work">My work</a></li>
+            <li><a class="header__menu__item" href="#testimonials">Testimonials</a></li>
+            <li><a class="header__menu__item" href="#contact">Contact</a></li>
         </ul>
-       </div>
    </nav>
+</header>
+
+   <!-- Main -->
+<main>
    <!-- Home -->
-   <section id="home">
+    <section id="home">
     <img 
     src="imgs/profile.jpg" 
     alt="LYS_profile photo" 
-    class="home__avatar"
     />
-    <h1 class="home__title">Hello,<br /> I'm Beginner Coder </h1>
-    <h2 class="home__description">A person who strives to become the best software engineer</h2>
-    <button class="home__contact">Contact Me</button>
+    <h2 class="home__title">Hello,I'm Beginner Coder </h2>
+    <p> class="home__description">A person who strives to become the best software engineer</p>
+    <a href="#contact">Contact Me</a>
    </section>
 
    <!-- About -->
-   <section id="about">
-    <h1>About me</h1>
+    <section id="about">
+    <h2>About me</h2>
     <p>
     I'm still learning about the front end, 
     but my goal is to master the back end later and become a full-stack developer.
 </p>
-<div class="about__majors">
-    <div class="major">
-    <div class="major__icon">
+<ul>
+    <li>
         <i class="fa-brands fa-html5"></i>
-        </div>
-        <h2 class="mojor__title">HTML</h2>
-        <div class="major__description">
-        I am studying about HTML
-        </div>
-    </div>
-    <div class="major">
-        <div class="major__icon">
-            <i class="fa-brands fa-js"></i>
-        </div>
-        <h2 class="mojor__title">Java_Script</h2>
-        <p class="major__description">
-            I am studying about JS
-        </p>
-    </div>
-    <div class="major">
-    <div class="major__icon">
+        <p>HTML</p>
+        <p>I am studying about HTML</p>
+    </li>
+    <li>
+        <i class="fa-brands fa-js"></i>
+        <p>JavaScript</p>
+        <p>I am studying about JS</p>
+    </li>
+    <li>
         <i class="fa-sharp fa-solid fa-circle-c"></i>
+        <p>C language</p>
+        <p>I am studying about C language</p>
+    </li>
+</ul>
+<ul>
+    <li>
+        <img src="imgs/jobs/WKU icon.png" alt="Wonkwang University" />
+        <div>
+            <p class="job__name">Wonkwang University Department of Computer Software Engineering</p>
+            <p class="job__period">2023 Mar ~ </p>
         </div>
-        <h2 class="mojor__title">C language</h2>
-        <p class="major__description">
-            I am studying about C language
-        </p>
-        </div>
-    </div>
-<div class="about__jobs">
-    <div class="jobs">
-        <img src="imgs/jobs/WKU icon.png" 
-        alt="Wonkwang University" 
-        class="job__logo">
-        <p class="job__name">Wonkwang University Department of Computer Software Engineering</p>
-        <p class="job__period">2023 Mar ~ </p>
-    </div>
-</div>
+    </li>
+</ul>
+
 </section>
 
    <!-- Skills -->
    <section id="skills">
-   <h1>Skills</h1>
-   <h2>Skills & Attribute</h2>
+   <h2>Skills</h2>
+   <p>Skills & Attribute</p>
    <p>
     I am interested in many programming languages and I am trying  
     to learn as many languages as possible.
@@ -185,7 +186,7 @@
             href="https://github.com/LYS-KR/portfolio" 
             class="project__img"
             target="blank"
-            <a href="" class="project" data-type="Front-end">
+            <a href="#" class="project" data-type="Front-end">
             <img class="project__img"
             src="/imgs/projects/Navbar_resize.png" 
             alt="Navbar_coding"/>
@@ -194,7 +195,7 @@
                 <span>Coding portfolio site Navbar with HTML</span>
             </div>
         </a>
-            <a href="" class="project" data-type="Front-end">
+            <a href="#" class="project" data-type="Front-end">
             <img class="project__img"
             src="/imgs/projects/Home_resize.png" 
             alt="Home_coding"
@@ -204,7 +205,7 @@
                 <span>Coding portfolio site Home with HTML</span>
             </div>
         </a>
-            <a href="" class="project" data-type="Front-end">
+            <a href="#" class="project" data-type="Front-end">
             <img class="project__img"
             src="/imgs/projects/About_resize.png" 
             alt="About_coding"
@@ -214,7 +215,7 @@
                 <span>Coding portfolio site About with HTML</span>
             </div>
         </a>
-            <a href="" class="project" data-type="Front-end">
+            <a href="#" class="project" data-type="Front-end">
                 <img class="project__img"
             src="/imgs/projects/skill-1_resize.png" 
             alt="Skill-2_coding"
@@ -224,7 +225,7 @@
                 <span>Coding portfolio site skill-1 with HTML</span> 
             </div>
         </a>
-            <a href="" class="project" data-type="Front-end">
+            <a href="#" class="project" data-type="Front-end">
             <img class="project__img"
             src="/imgs/projects/skill-2_resize.png" 
             alt="Skill-1_coding"
@@ -280,21 +281,42 @@
         </div>
     </div>
    </section>
+   <!-- Arrow Up -->
+   <aside>
+     <a href="#home" title="back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+   </aside>
+   </main>
    <!-- Contact -->
-   <section id="contact">
-    <h1 class="contact__title">Let's talk</h1>
-    <h2 class="contact__email">dldustn910@gmail.com</h2>
-    <div class="contact__links">
-        <a href="https://github.com/LYS-KR" target="_blank">
-        <i class="fa-brands fa-github"></i>
-    </a>
-    <a href="https://www.instagram.com/yeonsu3296/" target="_blank">
-        <i class="fa-brands fa-instagram"></i>    
-    </a>
-    </div>
-    <p class="contact__rights">
-        2023 Yeonsu - All right reserved
-    </p>
-   </section>
+   <footer id="contact">
+    <h2 class="contact__title">Let's talk</h2>
+    <p>dldustn910@gmail.com</p>>
+    <ul>
+        <li>
+            <a 
+            href="https://github.com/LYS-KR" 
+            target="_blank"
+            title="my linkedin link"
+            >
+             <i class="fa-brands fa-github"></i>
+        </a>
+    </li>
+        <li>
+            <a
+             href="https://www.instagram.com/yeonsu3296/" 
+             target="_blank"
+             title="my linkedin link"
+             >
+             <i class="fa-brands fa-instagram"></i>
+            </a>
+        </li>
+    </ul>
+    <p>ⓒ2023 Yeonsu - All right reserved</p>  
+   </footer>
 </body>
 </html>
+    
+    
+    
+ 
