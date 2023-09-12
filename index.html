@@ -24,7 +24,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 <!-- Javascript-->
-    <script src="main.js" defer></script>
+    <script type="module" src="src/main.js" defer></script>
+    <script type="module" src="src/projects.js" defer></script>
 
 </head>
 <body>
@@ -156,14 +157,17 @@
     <p class="description">Projects</p>
     <ul class="categories">
     <li>
-        <button class="category category--selected">ALL<span class="category__count">5</span></button>
+        <button class="category category--selected" data-category="All">ALL<span class="category__count">5</span></button>
     </li>
     <li>
-        <button class="category">Front-end<span class="category__count">5</span></button>
+        <button class="category" data-category="Front-end">Front-end<span class="category__count">5</span></button>
+    </li>
+    <li>
+        <button class="category" data-category="etc">etc<span class="category__count">0</span></button>
     </li>
    </ul>
    <ul class="projects">
-    <li class="project">
+    <li class="project" data-type="Front-end">
         <a href="#" target="blank">
             <img src="/imgs/projects/Navbar_resize.png" alt="Navbar_coding" class="project__img" />
             <div class="project__metadata">
@@ -172,7 +176,7 @@
             </div>
         </a>
     </li>
-    <li class="project">
+    <li class="project" data-type="Front-end">
         <a href="#" target="blank">
             <img src="/imgs/projects/Home_resize.png" alt="Home_coding" class="project__img" />
             <div class="project__metadata">
@@ -181,7 +185,7 @@
             </div>
         </a>
     </li>
-    <li class="project">
+    <li class="project" data-type="Front-end">
         <a href="#" target="blank">
             <img src="/imgs/projects/About_resize.png" alt="About_coding" class="project__img"/>
             <div class="project__metadata">               
@@ -190,7 +194,7 @@
             </div>
         </a>
     </li>
-    <li class="project">
+    <li class="project" data-type="Front-end">
         <a href="#" target="blank">
             <img src="/imgs/projects/skill-1_resize.png" alt="Skill-2_coding" class="project__img" />
             <div class="project__metadata">
@@ -199,7 +203,7 @@
             </div>
         </a>
     </li>
-    <li class="project">
+    <li class="project" data-type="Front-end">
         <a href="#" target="blank">
             <img src="/imgs/projects/skill-2_resize.png" alt="Skill-1_coding" class="project__img" />
             <div class="project__metadata">
